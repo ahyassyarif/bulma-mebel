@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mebel</title>
+
+  <!-- Bulma is included -->
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <!-- Fonts -->
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+  <script src="https://kit.fontawesome.com/7a8f53c5b6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="app">
+  <div class="hero"  style="height: 500px;background-image: url(img/banner.jpg);background-size:110% auto; background-position: center right;">
+    <div class="hero-head">
+      <nav class="navbar mt-5 has-text-weight-bold has-text-black is-shadowless">
+        <div class="navbar-brand ml-6 is-size-5 is-uppercase">
+            <a class="navbar-item has-text-black">Mebel</a>
+        </div>
+        <div class="navbar-menu">
+          <div class="navbar-end is-size-6 has-text-black">
+            <a class="navbar-item has-text-black">Learn More</a>
+            <a class="navbar-item has-text-black">Career</a>
+            <a class="navbar-item has-text-black">About Us</a>
+            <a class="navbar-item has-text-black">Career</a>
+            <a class="navbar-item has-text-black">Contact</a>
+          </div>          
+        </div>
+      </nav>
+    </div>
+    <div class="hero-body">
+      <!-- <div class="">
+        <img src="img/banner.jpg" class="">
+      </div> -->
+      <div class="column is-3 is-offset-7 has-text-black">
+        <h1 class="is-size-2 has-text-weight-bold">Durable.</h1>
+        <h1 class="is-size-2 has-text-weight-bold">Reliable.</h1>
+        <h1 class="is-size-2 has-text-weight-bold">Affordable.</h1>
+        <div class="control has-icons-left mt-6">
+          <input type="text" name="" class="input" placeholder="">
+          <span class="icon is-left">
+            <i class="fas fa-search"></i>
+          </span>
+        </div>
+        <div class="is-size-7 mt-2 has-text-weight-bold">
+          <p>let's find out what you need (or you want)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="section has-background-white">
+    <div class="container">
+      <p class="has-text-black has-text-weight-bold is-size-4 has-text-centered">
+        Discover our products
+      </p>
+    </div>
+    <div class="container  column is-10 is-offset-1">
+      <div class="tile is-ancestor">
+        <div class="tile is-parent is-3">
+          <a class="tile is-child box is-rounded has-text-black has-text-centered has-background-grey-lighter" style="border-radius: 30px">
+            <img src="img/pic1.png" class="image">
+          </a>
+        </div>
+        <div class="tile is-parent is-3">
+          <a class="tile is-child box is-rounded has-text-black has-text-centered has-background-grey-lighter" style="border-radius: 30px">
+            <img src="img/pic1.png" class="image">
+          </a>
+        </div>
+        <div class="tile is-parent is-3">
+          <a class="tile is-child box is-rounded has-text-black has-text-centered has-background-grey-lighter" style="border-radius: 30px">
+            <img src="img/pic1.png" class="image">
+          </a>
+        </div>
+        <div class="tile is-parent is-3">
+          <a class="tile is-child box is-rounded has-text-black has-text-centered has-background-grey-lighter" style="border-radius: 30px">
+            <img src="img/pic1.png" class="image">
+          </a>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+</div>
+
+<!-- Scripts below are for demo only -->
+<script type="text/javascript" src="js/main.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+<script type="text/javascript" src="js/chart.sample.min.js"></script>
+
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', () => {
+
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
+
+      // Add a click event on each of them
+      $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
+
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+
+        });
+      });
+    }
+
+  });
+</script>
+
+<!-- Icons below are for demo only. Feel free to use any icon pack. Docs: https://bulma.io/documentation/elements/icon/ -->
+<link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css">
+</body>
+</html>
